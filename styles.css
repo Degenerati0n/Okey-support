@@ -95,7 +95,10 @@ a:focus-visible {
 
 .site-nav a {
   text-decoration: none;
-  padding: 0.15rem 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0.35rem 0.15rem;
   border-bottom: 2px solid transparent;
 }
 
@@ -111,6 +114,19 @@ a:focus-visible {
 
 main {
   padding: 2rem 0 3rem;
+  overflow-wrap: anywhere;
+}
+
+.action-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.3rem;
+  background: var(--surface);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 main section + section {
@@ -160,6 +176,15 @@ li + li {
   font-size: 1.05rem;
 }
 
+.notice {
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1rem;
+  border: 2px solid #8a4b08;
+  border-radius: 0.35rem;
+  background: #fff4d6;
+  color: #472900;
+}
+
 .time {
   color: var(--muted);
 }
@@ -170,6 +195,7 @@ li + li {
   padding: 1.5rem 0;
   color: var(--muted);
   font-size: 0.9rem;
+  overflow-wrap: anywhere;
 }
 
 .site-footer p {
